@@ -1,0 +1,27 @@
+{% extends 'common.html' %}
+{%block content %}
+<h1 id="loginheading">{% block title %} {{message2}} {% endblock %}</h1>
+
+<form action="/validateuser" method="post" id="regtable1" name="loginform" onsubmit="return validatelogin()">
+    <table align="center" id="regtable">
+        <tr>
+            <td>
+                <input type="email" name="email1" id="email1" Placeholder="Enter Your Email" onblur="return validateloginemail()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" name="password1" id="password1" Placeholder="Enter Your Password" onblur="return  validateloginPassword()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Login">
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+<p id="clickregister">New User ? <a href="/newuser">Register Here</a></p>
+{% endblock %}

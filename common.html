@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width+device-width,initial-scale=1">
+
+        <title> {% block title %}{% endblock %} </title>
+        <link rel="stylesheet" href="static/main.css">
+        <script src="static/validation.js"> </script>
+
+    </head>
+    <body>
+    <header>
+        <h1>WEB APPLICATION PROJECT</h1>
+
+    </header>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <h3>&copy;By VJIT 2022 Batch</h3>
+    </footer>
+    </body>
+</html>

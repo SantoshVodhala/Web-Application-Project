@@ -1,0 +1,57 @@
+header{
+    background-color:aqua;
+    text-align: center;
+    border: 2px solid black;
+}
+
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    border: 2px solid black;
+    color: white;
+
+}
+.content{
+    border: 2px solid black;
+    background-color: aquamarine;
+
+}
+#regtable{
+    width: 50%;
+    margin: 0 auto;
+}
+input{
+    width: 100%;
+    padding: 15px 15px;
+    margin: 10px 0px;
+    border: 2px cadetblue;
+    border-radius: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+input:focus{
+    outline: none;
+}
+input[type='submit']{
+    width: 100%;
+    padding: 15px 15px;
+    margin: 10px 0px;
+    border: 2px cadetblue;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color:cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+#clickregister{
+    text-align: center;
+}
+#loginheading{
+    text-align: center;
+    background-color: bisque;
+    color: brown;
+
+}

@@ -1,0 +1,43 @@
+{%extends 'common.html'%}
+{% block content %}
+<h1><center>{% block title %}Register Here {% endblock %}</center></h1>
+<form action="/registeruser" method="POST" name="registrationform" id="regtable1" onsubmit="return validateall()" >
+    <table align="center" id="regtable">
+        <tr>
+            <td>
+                <input type="text" name="username" id="username" Placeholder="Enter Your Name" onblur=" return validateUserName()">
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                <p id= "errorname"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" name="password" id="password" Placeholder="Enter Your Password" onblur="return validatePassword()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" name="email" id="email" Placeholder="Enter Your Email" onblur="return validateemail()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="location" id="location" Placeholder="Enter Your Location" onblur="return  validatelocation()">
+            </td>
+        </tr>
+        <tr><td>
+            <p id= "errorname2"></p>
+        </td></tr>
+        <tr>
+            <td>
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+    </table>
+
+</form>
+<p id="clickregister">Already Registered ? <a href="/">Login Here</a></p>
+{% endblock %}
